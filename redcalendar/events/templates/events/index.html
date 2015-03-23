@@ -7,7 +7,7 @@
 	 <p>Where: {{ event.event_place}} </p>
 	 {{event.event_poster}}
 	 <p>When: {{ event.event_date }} </p>
-	 <img src="{{ event.event_poster}}" >
+	 <img src="{{ event.event_poster.url }}" >
 	 </div>
     {% endfor %}
 

@@ -3,7 +3,7 @@ from .models import Event
 # Register your models here.
 
 class EventAdmin(admin.ModelAdmin):
-    fields = ['event_name','event_date','event_place','event_poster']
-    list_display = ('event_name', 'event_date','event_place')
+    fields = ['name','from_date','to_date','place','poster']
+    list_display = ('name', 'from_date','place')
 
 admin.site.register(Event, EventAdmin)

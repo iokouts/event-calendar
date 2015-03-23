@@ -3,11 +3,11 @@
 {% if event_list  %}
 
     {% for event in event_list %}
-       <div> <h2> {{ event.event_name }}</h2>
-	 <p>Where: {{ event.event_place}} </p>
-	 {{event.event_poster}}
-	 <p>When: {{ event.event_date }} </p>
-	 <img src="{{ event.event_poster.url }}" >
+       <div> <h2> {{ event.name }}</h2>
+	 <p>Where: {{ event.place}} </p>
+	 <p>When: {{ event.from_date }} </p>
+	 <p>Until: {{ event.to_date }} </p>
+	 <img src="{{ event.poster.url }}" width="300" >
 	 </div>
     {% endfor %}
 
